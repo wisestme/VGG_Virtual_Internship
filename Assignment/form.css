@@ -1,68 +1,71 @@
+/* define variables for the primary colors */
 main {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	margin-right: auto;
-	margin-left: auto;
-	max-width: 800px;
-	font-family: verdana;
-}
-
-.content {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-
-.content > div:first-child {
-	background-image: url(img/fire.jpeg);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.content > div {
-	width: 50%;
-	border-top-left-radius: 15px;
-	border-bottom-left-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  font-family: verdana;
 }
 
 form {
-	display: flex;
-	flex-direction: column;
-	background: #000;
-	color: #fff;
-	padding: 2em;
-	border-top-right-radius: 15px;
-	border-bottom-right-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  color: #fff;
+  padding: 2em;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
-input {
-	margin-bottom: 1.5em;
-	border-radius: 5px;
-	padding: 0.5em;
+.content > div:first-child {
+  background-image: url(img/fire.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-h2 {
-	text-align: center;
+form > input:last-child, main {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.radio {
-	display: flex;
-	flex-direction: row;
-
-}
-
-.radio > input {
-	margin-left: 1em;
+form > input:last-child,
+textarea {
+  margin-top: 2em;
 }
 
 form > input:last-child {
-	margin-top: 2em;
-	width: 80px;
-	margin-left: auto;
-	margin-right: auto;
+  width: 80px;
 }
 
-textarea {
-	margin-top: 2em;
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
+
+.content > div {
+  width: 50%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+input {
+  margin-bottom: 1.5em;
+  border-radius: 5px;
+  padding: 0.5em;
+}
+
+h2 {
+  text-align: center;
+}
+
+.radio {
+  display: flex;
+  flex-direction: row;
+}
+
+.radio > input {
+  margin-left: 1em;
+}
+
+/*# sourceMappingURL=form3.css.map */
