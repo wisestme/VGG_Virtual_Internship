@@ -21,26 +21,26 @@
 			<form action="">
 				
 				<label for="firstname">First Name</label>
-				<input name="textfield" id="firstname" type="text">
+				<input name="textfield" id="firstname" type="text" required>
 				<label for="lastname">Last Name</label>
-				<input name="textfield" id="lastname" type="text">
+				<input name="textfield" id="lastname" type="text" required>
 				<label for="birthday">Birthday</label>
-				<input name="textfield" id="birthday" type="date">
+				<input name="textfield" id="birthday" type="date" required>
 				<label for="gender">Gender</label>
 				<div class="radio">
-					<input name="gender" id="gender" class="radio" type="radio" value="Male">
+					<input name="gender" id="gender" class="radio" type="radio" value="Male" required>
 					<label for="male">Male</label>
-					<input name="gender" id="gender" class="radio" type="radio">
+					<input name="gender" id="gender" class="radio" type="radio" required>
 					<label for="female">Female</label>
 				</div>
 				
 				<label for="email">Email</label>
-				<input name="textfield" id="email" type="email">
+				<input name="textfield" id="email" type="email" required>
 				<label for="phone">Phone Number</label>
-				<input name="textfield" id="phone" type="number">
+				<input name="textfield" id="phone" type="number" required>
 				
 				<label for="region">Choose your region</label>
-				<select name="region" id="select">
+				<select name="region" id="select" required>
 					<option value="1">North-Central</option>
 					<option value="2">North-East</option>
 					<option value="3">North-Eest</option>
@@ -49,7 +49,7 @@
 					<option value="6">South-West</option>
 				</select>
 
-				<textarea placeholder="Additiopnal comments here" name="comment" id="comment" cols="30" rows="10"></textarea>
+				<textarea placeholder="Additiopnal comments here" name="comment" id="comment" cols="30" rows="10" required></textarea>
 				<input type="submit" value="Sign Up">
 				<button class="get-value">Get Value</button>
 				
