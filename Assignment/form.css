@@ -75,7 +75,7 @@ input:valid {
 
 /* selector that matches element some of the time,
 when the prior selector does NOT match. */
-input:invalid {
+input:invalid, .invalid {
   border-color: red;
 }
 
@@ -87,3 +87,4 @@ input:focus {
 }
 
 /*# sourceMappingURL=form.css.map */
+
