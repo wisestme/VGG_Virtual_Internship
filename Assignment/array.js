@@ -248,17 +248,18 @@ console.log(`Active Employees: ${activeStaff}`);
 		
 }
 
-
-for(let i = 0; i < pay.length - 1; i++){
+console.log(pay);
+let highestPay = Math.max.apply(null, pay);
+for(let i = 0; i < pay.length; i++){
 	
-	if(pay[i] > pay[i+1]){
-			pay = pay.splice(i, 1)
-		} else {
-			pay = pay.splice(i+1, 1)
-		}
-
-		if(employees[i].salary === pay[0]) {
-		highestPaid.push(employees[i].first_name);
-	}
-}
+// 	if(pay[i] < pay[i+1]){
+// 			pay = pay.splice(i, 1)
+// 		} else {
+// 			pay = pay.splice(i+1, 1)
+// 		}
+// console.log(pay);
+ 		if(employees[i].salary === highestPay) {
+ 		highestPaid.push(employees[i].first_name);
+ 	}
+ }
 console.log(`The highest paid employee is ${highestPaid}`);
